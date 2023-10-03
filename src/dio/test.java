@@ -5,6 +5,7 @@ import dio.Strategy.ComportamentoAgressivo;
 import dio.Strategy.ComportamentoDefensivo;
 import dio.Strategy.ComportamentoNormal;
 import dio.Strategy.Robo;
+import dio.facade.Facade;
 import dio.singleton.SingletonEager;
 import dio.singleton.SingletonLazy;
 import dio.singleton.SingletonLazyHolder;
@@ -13,7 +14,7 @@ public class test {
 
     public static void main(String[] args){
 
-        //Testes relacionados ao Design Pattern Singleton
+        //Testes relacionados ao Singleton
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
         lazy = SingletonLazy.getInstancia();
@@ -29,7 +30,7 @@ public class test {
         holder = SingletonLazyHolder.getInstancia();
         System.out.println(holder);
     
-        //Testes relacionados ao Design Pattern Strategy
+        //Testes relacionados ao Strategy
         Comportamento defensivo = new ComportamentoDefensivo();
         Comportamento normal = new ComportamentoNormal();
         Comportamento agressivo = new ComportamentoAgressivo();
@@ -44,6 +45,8 @@ public class test {
         robo.setComportamento(agressivo);
         robo.mover();
 
-        
+        //Testes relacionados ao Facede
+        Facade facade = new Facade();
+        facade.migrarCliente("Guilherme", "9999999");
     }
 }
