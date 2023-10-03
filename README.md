@@ -7,3 +7,4 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 2. Strategy:
    - Tem como objetivo simplificar a variação de algoritmos para a resolução de um mesmo problema.
 3. Facade
+    - Tem como objetico promover uma interface que reduza a complexidade nas integrações com subsistemas.  
